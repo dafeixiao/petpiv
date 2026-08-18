@@ -18,11 +18,11 @@ The code is organized as a Jupyter Notebook/JupyterLab project. To run the code,
 
 4, run infer_locnet.ipynb. It applies the trained network to localize particles in experimental data. The ouput is a localizaiton list file.
 
-5, run link.ipynb. It takes the localizaiton list file and generate particle trajectories using a four-frame tracking algorithm (adapted from https://github.com/ronshnapp/MyPTV). 
+5, run alignment.ipynb. It builds the registration/alignment between PET-PIV localizaitons and shake-the-box localizaitons (4-camera references). In trackign mode, this is optional and can be used for validation. In field mode, this is mandatory to generate high-quality training data.
 
-6, alignment.ipynb
+6, run link.ipynb. It takes the (aligned) localizaiton list file and generate particle trajectories using a four-frame tracking algorithm (adapted from https://github.com/ronshnapp/MyPTV). The output includes velocities.
 
-7, CCM/CCM_v2_J.m
+7, run CCM/CCM_v2_J.m. It takes the tracked velocities and generate volumetric velocity fields.
 
 # field mode
 
