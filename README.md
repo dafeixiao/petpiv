@@ -30,6 +30,9 @@ The code is organized as a Jupyter Notebook/JupyterLab project. To run the code,
 
 2, run **train_velnet.ipynb**. This trains a VelNet for directly reconstructing velocitry fields from image intensity variations.
 
+
+Please contact dafeixiao@gmail.com if you have any questions.
+
 3, run **infer_velnet.ipynb**. The application of the trained VelNet to experimental PET-PIV data.
 
 
