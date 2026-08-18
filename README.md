@@ -22,7 +22,17 @@ The code is organized as a Jupyter Notebook/JupyterLab project. To run the code,
 
 6, run **link.ipynb**. It takes the (aligned) localizaiton list file and generate particle trajectories using a four-frame tracking algorithm (adapted from https://github.com/ronshnapp/MyPTV). The output includes velocities.
 
-7, run **CCM/CCM_v2_J.m**. It takes the tracked velocities and generate volumetric velocity fields.
+7, run **CCM/CCM_v2_J.m**. It takes the tracked velocities and generates volumetric velocity fields.
 
 # field mode
+
+1, run **training_data.ipynb**. It takes PET-PIV data, TomoPIV data, and the alignment file, and outputs paired training data (cropped PET-PIV image sequence with algined velocity components U, V, W).
+
+2, run **train_velnet.ipynb**. This trains a VelNet for directly reconstructing velocitry fields from image intensity variations.
+
+3, run **infer_velnet.ipynb**. The application of the trained VelNet to experimental PET-PIV data.
+
+
+
+
 
