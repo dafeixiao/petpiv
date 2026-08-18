@@ -31,6 +31,8 @@ To run the code, a virtual Python environment with Jupyter Notebook/Lab and a CU
 
 7, run **CCM/CCM_v2_J.m**. It takes the tracked velocities and generates volumetric velocity fields.
 
+note: Test sample data are provided to enable smooth execution of the code.
+
 ## field mode
 
 1, run **training_data.ipynb**. It takes PET-PIV data, TomoPIV data, and the alignment file, and outputs paired training data (cropped PET-PIV image sequence with algined velocity components U, V, W).
