@@ -7,6 +7,7 @@ Our contributions are twofold:
 For more technical details, please refer to https://arxiv.org/abs/2607.29163 
 
 # env
+The code is organized in the format of jupyter notebook or jupyter lab. To run the code, a virtual python environment with jupyter notebook/lab and cuda-version pytorch is required. For other necessary python packages, it is convenient to install upon running error feedbacks. 
 
 # tracking mode 
 1, run collect_psfs.ipynb and obtain a PSF collection for in-situ modeling
