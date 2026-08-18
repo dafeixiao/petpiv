@@ -11,18 +11,20 @@ The code is organized as a Jupyter Notebook/JupyterLab project. To run the code,
 
 # tracking mode
 0, switch the working directory to the tracking folder
+
 1, run collect_psfs.ipynb which processes sparse data (images with sparse particles) and outputs a collection of PSFs
+
 2, run in_situ_psf.ipynb
 
-train_locnet.ipynb
+3, train_locnet.ipynb
 
-infer_locnet.ipynb
+4, infer_locnet.ipynb
 
-link.ipynb
+5, link.ipynb
 
-alignment.ipynb
+6, alignment.ipynb
 
-CCM/CCM_v2_J.m
+7, CCM/CCM_v2_J.m
 
 # field mode
 
