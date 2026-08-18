@@ -16,6 +16,8 @@ The code is organized as a Jupyter Notebook/JupyterLab project.
 
 To run the code, a virtual Python environment with Jupyter Notebook/Lab and a CUDA-enabled version of PyTorch is required. Other required Python packages can be conveniently installed as needed based on the error messages encountered during execution.
 
+This guide provides a general pipeline for using the code. Detailed explanations of the parameters can be found within each individual notebook file.
+
 ## tracking mode
 1, run **collect_psfs.ipynb**. It processes sparse data (images with sparse particles) and outputs a collection of PSFs.
 
@@ -35,7 +37,7 @@ note: Test sample data are provided to enable smooth execution of the code.
 
 ## field mode
 
-1, run **training_data.ipynb**. It takes PET-PIV data, TomoPIV data, and the alignment file, and outputs paired training data (cropped PET-PIV image sequence with algined velocity components U, V, W).
+1, run **training_data.ipynb**. It takes PET-PIV data, TomoPIV data, and the alignment file, and outputs paired training data (cropped PET-PIV image sequence with algined velocity components U, V, W). 
 
 2, run **train_velnet.ipynb**. This trains a VelNet for directly reconstructing velocitry fields from image intensity variations.
 
