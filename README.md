@@ -6,21 +6,19 @@ Our contributions are twofold:
 
 For more technical details, please refer to https://arxiv.org/abs/2607.29163 
 
-# env
+# environment
 The code is organized as a Jupyter Notebook/JupyterLab project. To run the code, a virtual Python environment with Jupyter Notebook/Lab and a CUDA-enabled version of PyTorch is required. Other required Python packages can be conveniently installed as needed based on the error messages encountered during execution.
 
 # tracking mode
-0, switch the working directory to the tracking folder
+1, run collect_psfs.ipynb. It processes sparse data (images with sparse particles) and outputs a collection of PSFs.
 
-1, run collect_psfs.ipynb which processes sparse data (images with sparse particles) and outputs a collection of PSFs
+2, run in_situ_psf.ipynb. It takes the PSF collection and optical parameters, and outputs a PSF model file.
 
-2, run in_situ_psf.ipynb
+3, run train_locnet.ipynb. It employs the calibrated model and generates syhthetic training data (images-x, particle localizations-y).
 
-3, train_locnet.ipynb
+4, run infer_locnet.ipynb. It applies the trained network to localize particles in experimental data. The ouput is a localizaiton list file.
 
-4, infer_locnet.ipynb
-
-5, link.ipynb
+5, run link.ipynb. It takes the localizaiton list file and generate particle trajectories using a four-frame tracking algorithm (adapted from https://github.com/ronshnapp/MyPTV). 
 
 6, alignment.ipynb
 
