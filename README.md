@@ -7,12 +7,12 @@ Our contributions are twofold:
 
 For more technical details, please refer to https://arxiv.org/abs/2607.29163 
 
-# environment
+## environment
 The code is organized as a Jupyter Notebook/JupyterLab project. 
 
 To run the code, a virtual Python environment with Jupyter Notebook/Lab and a CUDA-enabled version of PyTorch is required. Other required Python packages can be conveniently installed as needed based on the error messages encountered during execution.
 
-# tracking mode
+## tracking mode
 1, run **collect_psfs.ipynb**. It processes sparse data (images with sparse particles) and outputs a collection of PSFs.
 
 2, run **in_situ_psf.ipynb**. It takes the PSF collection and optical parameters, and outputs a PSF model file.
@@ -27,7 +27,7 @@ To run the code, a virtual Python environment with Jupyter Notebook/Lab and a CU
 
 7, run **CCM/CCM_v2_J.m**. It takes the tracked velocities and generates volumetric velocity fields.
 
-# field mode
+## field mode
 
 1, run **training_data.ipynb**. It takes PET-PIV data, TomoPIV data, and the alignment file, and outputs paired training data (cropped PET-PIV image sequence with algined velocity components U, V, W).
 
