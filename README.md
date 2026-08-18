@@ -7,7 +7,9 @@ Our contributions are twofold:
 For more technical details, please refer to https://arxiv.org/abs/2607.29163 
 
 # environment
-The code is organized as a Jupyter Notebook/JupyterLab project. To run the code, a virtual Python environment with Jupyter Notebook/Lab and a CUDA-enabled version of PyTorch is required. Other required Python packages can be conveniently installed as needed based on the error messages encountered during execution.
+The code is organized as a Jupyter Notebook/JupyterLab project. 
+
+To run the code, a virtual Python environment with Jupyter Notebook/Lab and a CUDA-enabled version of PyTorch is required. Other required Python packages can be conveniently installed as needed based on the error messages encountered during execution.
 
 # tracking mode
 1, run **collect_psfs.ipynb**. It processes sparse data (images with sparse particles) and outputs a collection of PSFs.
