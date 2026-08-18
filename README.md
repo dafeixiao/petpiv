@@ -10,19 +10,19 @@ For more technical details, please refer to https://arxiv.org/abs/2607.29163
 The code is organized as a Jupyter Notebook/JupyterLab project. To run the code, a virtual Python environment with Jupyter Notebook/Lab and a CUDA-enabled version of PyTorch is required. Other required Python packages can be conveniently installed as needed based on the error messages encountered during execution.
 
 # tracking mode
-1, run collect_psfs.ipynb. It processes sparse data (images with sparse particles) and outputs a collection of PSFs.
+1, run **collect_psfs.ipynb**. It processes sparse data (images with sparse particles) and outputs a collection of PSFs.
 
-2, run in_situ_psf.ipynb. It takes the PSF collection and optical parameters, and outputs a PSF model file.
+2, run **in_situ_psf.ipynb**. It takes the PSF collection and optical parameters, and outputs a PSF model file.
 
-3, run train_locnet.ipynb. It employs the calibrated model and generates syhthetic training data (images-x, particle localizations-y).
+3, run **train_locnet.ipynb**. It employs the calibrated model and generates syhthetic training data (images-x, particle localizations-y).
 
-4, run infer_locnet.ipynb. It applies the trained network to localize particles in experimental data. The ouput is a localizaiton list file.
+4, run **infer_locnet.ipynb**. It applies the trained network to localize particles in experimental data. The ouput is a localizaiton list file.
 
-5, run alignment.ipynb. It builds the registration/alignment between PET-PIV localizaitons and shake-the-box localizaitons (4-camera references). In trackign mode, this is optional and can be used for validation. In field mode, this is mandatory to generate high-quality training data.
+5, run **alignment.ipynb**. It builds the registration/alignment between PET-PIV localizaitons and shake-the-box localizaitons (4-camera references). In trackign mode, this is optional and can be used for validation. In field mode, this is mandatory to generate high-quality training data.
 
-6, run link.ipynb. It takes the (aligned) localizaiton list file and generate particle trajectories using a four-frame tracking algorithm (adapted from https://github.com/ronshnapp/MyPTV). The output includes velocities.
+6, run **link.ipynb**. It takes the (aligned) localizaiton list file and generate particle trajectories using a four-frame tracking algorithm (adapted from https://github.com/ronshnapp/MyPTV). The output includes velocities.
 
-7, run CCM/CCM_v2_J.m. It takes the tracked velocities and generate volumetric velocity fields.
+7, run **CCM/CCM_v2_J.m**. It takes the tracked velocities and generate volumetric velocity fields.
 
 # field mode
 
