@@ -7,10 +7,11 @@ Our contributions are twofold:
 For more technical details, please refer to https://arxiv.org/abs/2607.29163 
 
 # env
-The code is organized in the format of jupyter notebook or jupyter lab. To run the code, a virtual python environment with jupyter notebook/lab and cuda-version pytorch is required. For other necessary python packages, it is convenient to install upon running error feedbacks. 
+The code is organized as a Jupyter Notebook/JupyterLab project. To run the code, a virtual Python environment with Jupyter Notebook/Lab and a CUDA-enabled version of PyTorch is required. Other required Python packages can be conveniently installed as needed based on the error messages encountered during execution.
 
-# tracking mode 
-1, run collect_psfs.ipynb and obtain a PSF collection for in-situ modeling
+# tracking mode
+0, switch the working directory to the tracking folder
+1, run collect_psfs.ipynb which processes sparse data (images with sparse particles) and outputs a collection of PSFs
 2, run in_situ_psf.ipynb
 
 train_locnet.ipynb
